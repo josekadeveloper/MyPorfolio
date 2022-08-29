@@ -1,10 +1,10 @@
 # MyPortfolio Website
 
 [react_logo]: react.png
-[![react_logo]]
+![react_logo]
 
 Portfolio desarrollado en React, Sass y algunas librerías más, donde se va a representar mi trayectoria profesional
-que con el tiempo será modificado y optimizado.
+adjuntando todos las Apps presentes y futuras.
 
 Desarrollador: José Carlos De La Rosa Methvin
 
