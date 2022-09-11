@@ -1,5 +1,6 @@
 import { useRef } from 'react';
-import { auth } from '../../firebase';
+import { auth, storage } from '../../firebase';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const Home = () => {
     const form = useRef();
@@ -12,7 +13,40 @@ const Home = () => {
         const url = form.current[2]?.value;
         const image = form.current[3]?.files[0];
 
-        console.log(name, description, url, image);
+        const storageRef = ref(storage, `portfolio/${image.name}`);
+
+        uploadBytes(storageRef, image).then(
+            (snapshot) => {
+                getDownloadURL(snapshot.ref).then((downloadUrl) => {
+                    savePortfolio({
+                        name,
+                        description,
+                        url,
+                        image: downloadUrl
+                    })
+                }, (error) => {
+                    console.log(error);
+                    savePortfolio({
+                        name,
+                        description,
+                        url,
+                        image: null
+                    })
+                })
+            }, (error) => {
+                console.log(error);
+                savePortfolio({
+                    name,
+                    description,
+                    url,
+                    image: null
+                })
+            }
+        )
+    }
+
+    const savePortfolio = (portfolio) => {
+        console.log(portfolio);
     }
 
     return (
