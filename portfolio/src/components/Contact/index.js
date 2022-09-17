@@ -1,17 +1,19 @@
-import { useEffect, useState, useRef } from 'react'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
-import emailjs from '@emailjs/browser'
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import { useEffect, useState, useRef } from 'react';
+import Loader from 'react-loaders';
+import AnimatedLetters from '../AnimatedLetters';
+import './index.scss';
+import emailjs from '@emailjs/browser';
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const form = useRef()
+    const [letterClass, setLetterClass] = useState('text-animate');
+    const [t, i18n] = useTranslation("global");
+    const form = useRef();
 
     useEffect(() => {
         setTimeout(() => {
-          setLetterClass('text-animate-hover')
+          setLetterClass('text-animate-hover');
         }, 3000)
     }, [])
 
@@ -43,33 +45,28 @@ const Contact = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass} 
-                            strArray={"Contact me".split("")}
+                            strArray={t("contact.contact-me").split("")}
                             idx={15}
                         />
                     </h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged.
-                    </p>
+                    <p>{t("contact.contact-1")}</p>
                     <div className="contact-form">
                         <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className="half">
-                                    <input type="text" name="name" placeholder="Name" required />
+                                    <input type="text" name="name" placeholder={t("contact.contact-name")} required />
                                 </li>
                                 <li className="half">
-                                    <input type="email" name="email" placeholder="Email" required />
+                                    <input type="email" name="email" placeholder={t("contact.contact-email")} required />
                                 </li>
                                 <li>
-                                    <input placeholder="Subject" type="text" name="subject" required />
+                                    <input placeholder={t("contact.contact-subject")} type="text" name="subject" required />
                                 </li>
                                 <li>
-                                    <textarea placeholder="Message" name="message" required ></textarea>
+                                    <textarea placeholder={t("contact.contact-message")} name="message" required ></textarea>
                                 </li>
                                 <li>
-                                    <input type="submit" className="flat-button2" value="SEND"/>
+                                    <input type="submit" className="flat-button2" value={t("contact.contact-send")}/>
                                 </li>
                             </ul>
                         </form>

@@ -7,18 +7,21 @@
     z-index: 3;
     min-height: 500px;
 
-    .logo {
-        display: block;
-        padding: 8px 0;
-
+    button {
+        background: none;
+        border: none;
+        
         img {
-            display: block;
-            margin: 8px auto;
-            width: 24px;
-            height: auto;
+            position: relative;
+    
+            &.logoES {
+                top: 20px;
+                margin-left: 30px;
+                width: 25px;
+            }
 
-            &.sub-logo {
-                width: 50px;
+            &.logoEN {
+                width: 25px;
             }
         }
     }
