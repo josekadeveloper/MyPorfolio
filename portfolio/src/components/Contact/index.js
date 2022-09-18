@@ -77,7 +77,6 @@ const Contact = () => {
                     <br />
                     Spain,
                     <br />
-                    Virgen De Palomares 30 BAJO B, 11550 <br />
                     Chipiona (Cádiz) <br />
                     <span>josekadeveloper@gmail.com</span>
                 </div>

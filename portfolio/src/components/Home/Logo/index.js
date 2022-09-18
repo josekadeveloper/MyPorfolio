@@ -1,5 +1,5 @@
 import './index.scss'
-import Avatar from '../../../assets/images/avatar.svg'
+import Avatar from '../../../assets/images/fotoportfolio.jpeg'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial';
 
