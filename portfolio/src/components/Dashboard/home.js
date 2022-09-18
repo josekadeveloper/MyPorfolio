@@ -2,9 +2,27 @@ import { useRef } from 'react';
 import { auth, storage, db } from '../../firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 const Home = () => {
     const form = useRef();
+    const swal = withReactContent(Swal);
+
+    const messagePopup = (message, type) => {
+        swal.fire({
+            title: <strong>{message}</strong>,
+            icon: type,
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+              },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+              }
+        }).then(function(){ 
+            window.location.reload();
+        });
+    }
 
     const submitPortfolio = (e) => {
         e.preventDefault();
@@ -26,7 +44,6 @@ const Home = () => {
                         image: downloadUrl
                     })
                 }, (error) => {
-                    console.log(error);
                     savePortfolio({
                         name,
                         description,
@@ -35,7 +52,6 @@ const Home = () => {
                     })
                 })
             }, (error) => {
-                console.log(error);
                 savePortfolio({
                     name,
                     description,
@@ -50,9 +66,9 @@ const Home = () => {
         portfolio.timestamp = serverTimestamp();
         try {
             await addDoc(collection(db, 'portfolio'), portfolio);
-            window.location.reload(false);
+            messagePopup('Add portfolio successfully', 'success');
         } catch (error) {
-            alert('Failed to add portfolio');
+            messagePopup('Only administer user can access this function!', 'error');
         }
     }
 
