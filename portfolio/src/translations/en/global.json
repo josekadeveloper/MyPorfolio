@@ -6,12 +6,12 @@
         "hello-4": "'m",
         "web-developer": "web developer.",
         "fullstack-developer": "FullStack developer",
-        "contact": "CONTACT ME"
+        "about": "ABOUT ME"
     },
     "about": {
         "about-me": "About Me",
         "about-1": "I'm a very ambitious FullStack developer looking for a role in an established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.",
-        "about-2": "I'm quite confident, autodidact, and hard working on improving my skills.",
+        "about-2": "I'm quite confident, autodidactic, and hard working on improving my skills.",
         "about-3": "If I need to define myself in one sentence, I would say I have high social skills, I am a great team player and I am tech-obsessed!!!"
     },
     "portfolio": {
@@ -20,7 +20,7 @@
     },
     "contact": {
         "contact-me": "Contact Me",
-        "contact-1": "If you have any questions or request, please don't hesitate to contact me using the form below",
+        "contact-1": "If you have any questions or requests, please don't hesitate to contact me using the form below",
         "contact-name": "Name",
         "contact-email": "Email",
         "contact-subject": "Subject",

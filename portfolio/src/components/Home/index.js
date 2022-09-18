@@ -29,7 +29,7 @@ const Home = () => {
                         <span className={`${letterClass} _14`}>{t("home.hello-4")}</span>
                         <img src={LogoTitle} alt="developer" />
                             <AnimatedLetters letterClass={letterClass}
-                            strArray={"osek".split("")}
+                            strArray={"osek,".split("")}
                             idx={15} />
                         < br/>
                         <AnimatedLetters letterClass={letterClass}
@@ -37,7 +37,7 @@ const Home = () => {
                             idx={19} />
                     </h1>
                     <h2>{t("home.fullstack-developer")}</h2>
-                    <Link to="/contact" className="flat-button">{t("home.contact")}</Link>
+                    <Link to="/about" className="flat-button">{t("home.about")}</Link>
                 </div>
                 <Logo />
             </div>
