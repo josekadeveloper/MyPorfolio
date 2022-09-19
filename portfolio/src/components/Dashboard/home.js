@@ -2,27 +2,12 @@ import { useRef } from 'react';
 import { auth, storage, db } from '../../firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
+import { messagePopup } from "../MessagePopup/index.js";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
     const form = useRef();
-    const swal = withReactContent(Swal);
-
-    const messagePopup = (message, type) => {
-        swal.fire({
-            title: <strong>{message}</strong>,
-            icon: type,
-            showClass: {
-                popup: 'animate__animated animate__fadeInDown'
-              },
-            hideClass: {
-                popup: 'animate__animated animate__fadeOutUp'
-              }
-        }).then(function(){ 
-            window.location.reload();
-        });
-    }
+    const [t, i18n] = useTranslation("global");
 
     const submitPortfolio = (e) => {
         e.preventDefault();
@@ -66,9 +51,9 @@ const Home = () => {
         portfolio.timestamp = serverTimestamp();
         try {
             await addDoc(collection(db, 'portfolio'), portfolio);
-            messagePopup('Add portfolio successfully', 'success');
+            messagePopup(t("home.success"), 'success');
         } catch (error) {
-            messagePopup('Only administer user can access this function!', 'error');
+            messagePopup(t("home.error"), 'error');
         }
     }
 

@@ -6,7 +6,9 @@
         "hello-4": "'m",
         "web-developer": "web developer.",
         "fullstack-developer": "FullStack developer",
-        "about": "ABOUT ME"
+        "about": "ABOUT ME",
+        "success": "Add portfolio successfully!",
+        "error": "Only administer user can access this function"
     },
     "about": {
         "about-me": "About Me",
@@ -25,6 +27,8 @@
         "contact-email": "Email",
         "contact-subject": "Subject",
         "contact-message": "Message",
-        "contact-send": "Send"
+        "contact-send": "Send",
+        "success": "Message successfully sent!",
+        "error": "Failed to send the message, please try again"
     }
 }

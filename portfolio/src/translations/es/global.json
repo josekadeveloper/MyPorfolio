@@ -6,7 +6,9 @@
         "hello-4": "oy",
         "web-developer": "desarrollador web.",
         "fullstack-developer": "Desarrollador FullStack",
-        "about": "SOBRE MI"
+        "about": "SOBRE MI",
+        "success": "Se ha añadido al portfolio satisfactoriamente!",
+        "error": "Solo los administradores pueden acceder a esta función"
     },
     "about": {
         "about-me": "Sobre Mi",
@@ -25,6 +27,8 @@
         "contact-email": "Email",
         "contact-subject": "Asunto",
         "contact-message": "Mensaje",
-        "contact-send": "Enviar"
+        "contact-send": "Enviar",
+        "success": "Mensaje enviado correctamente!",
+        "error": "Fallo al enviar el mensaje, porfavor intentelo de nuevo"
     }
 }

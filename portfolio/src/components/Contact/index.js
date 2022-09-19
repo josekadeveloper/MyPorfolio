@@ -5,6 +5,7 @@ import './index.scss';
 import emailjs from '@emailjs/browser';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import { useTranslation } from "react-i18next";
+import { messagePopup } from "../MessagePopup/index.js";
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -29,11 +30,10 @@ const Contact = () => {
             )
             .then(
                 () => {
-                    alert('Message successfully sent!')
-                    window.location.reload(false)
+                    messagePopup(t("contact.success"), 'success');
                 },
                 () => {
-                    alert('Failed to send the message, please try again')
+                    messagePopup(t("contact.error"), 'error');
                 }
             )
     }
