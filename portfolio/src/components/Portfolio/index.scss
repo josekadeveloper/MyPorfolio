@@ -112,6 +112,26 @@
     }
 }
 
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    .container.portfolio-page {
+        .title {
+            font-size: 14px !important;
+        }
+
+        .description {
+            font-size: 6.5px !important;
+        }
+
+        .btn {
+            height: 20px;
+            font-size: 10px;
+            line-height: 4px;
+        }
+    }
+}
+
+/* OTHERS SCREENS */
 @media screen and (max-width: 1200px) {
     .container.portfolio-page {
         width: 100%;
