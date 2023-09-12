@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 const Home = () => {
     const form = useRef();
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     const submitPortfolio = (e) => {
         e.preventDefault();

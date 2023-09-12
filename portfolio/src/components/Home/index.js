@@ -1,15 +1,15 @@
 import LogoTitle from '../../assets/images/logo-letter.png';
 import { Link } from 'react-router-dom';
-import './index.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
 import Loader from 'react-loaders';
 import { useTranslation } from "react-i18next";
+import './index.scss';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     useEffect(() => {
         setTimeout(() => {

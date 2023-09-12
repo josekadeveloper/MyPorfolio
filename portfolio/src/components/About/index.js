@@ -1,14 +1,14 @@
-import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faHtml5, faJava, faJsSquare, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 import { useTranslation } from "react-i18next";
+import './index.scss';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     useEffect(() => {
         setTimeout(() => {

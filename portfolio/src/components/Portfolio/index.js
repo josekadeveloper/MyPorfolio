@@ -9,7 +9,7 @@ import "./index.scss";
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const [portfolio, setPortfolio] = useState([]);
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     useEffect(() => {
         const timer = setTimeout(() => {
