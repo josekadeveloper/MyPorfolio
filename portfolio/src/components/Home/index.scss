@@ -52,9 +52,9 @@ h2 {
     color: #8d8d8d;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 30px;
     font-family: sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     animation: fadeIn 1s 1.8s backwards;
 }
 
@@ -115,5 +115,10 @@ h2 {
 
     h1 {
         font-size: 38px;
+    }
+
+    h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
     }
 }

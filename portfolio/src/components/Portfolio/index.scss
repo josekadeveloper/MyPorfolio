@@ -244,11 +244,12 @@
         }
 
         .images-container {
-            gap: 15px !important;
+            gap: 75px !important;
         }
 
         .image-box {
-            height: 300px;
+            height: 500px;
+            max-width: calc(45% - 300px);
         }
 
         .title {
