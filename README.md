@@ -1,7 +1,6 @@
 # MyPortfolio Website
 
-Portfolio developed in React, JavaScript, Sass and some other libraries, where my professional career will be represented
-attaching all present and future Apps.
+Portfolio, where my professional career will be represented attaching all present and future Apps.
 
 ### Features
 
