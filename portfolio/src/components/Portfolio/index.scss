@@ -1,7 +1,7 @@
 .portfolio-page {
     padding-left: 100px;
     padding-right: 50px;
-    width: calc(100% - 150px);
+    width: auto;
     position: initial;
     height: 100%;
     overflow: auto;
@@ -12,19 +12,17 @@
     }
 
     .images-container {
-        display: flex;
+        display: grid;
         gap: 15px;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fill,minmax(360px, 1fr));
         padding-bottom: 100px;
     }
 
     .image-box {
         position: relative;
-        flex: 1 1 20%;
         height: 400px;
         overflow: hidden;
         border-radius: 10px;
-        max-width: calc(25% - 10px);
 
         .portfolio-image {
             position: absolute;
@@ -125,12 +123,11 @@
         }
 
         .images-container {
-            gap: 49px !important;
+            grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
         }
 
         .image-box {
             height: 200px;
-            max-width: calc(50% - 10px);
         }
 
         .content {
@@ -157,27 +154,11 @@
     }
 }
 
-@media screen and (min-width: 325px) {
-    .container.portfolio-page {
-        .images-container {
-            gap: 71px !important;
-        }
-    }
-}
-
-@media screen and (min-width: 400px) {
-    .container.portfolio-page {
-        .images-container {
-            gap: 75px !important;
-        }
-    }
-}
-
 /* TABLET */
 @media screen and (min-width: 760px) {
     .container.portfolio-page {
         .images-container {
-            gap: 157px !important;
+            grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
         }
 
         .content {
@@ -203,22 +184,9 @@
     }
 }
 
-/* LAPTOP */
-@media screen and (min-width: 900px) {
-    .container.portfolio-page {
-        .images-container {
-            gap: 175px !important;
-        }
-    }
-}
-
 /* OTHERS SCREENS */
 @media screen and (min-width: 1024px) {
     .container.portfolio-page {
-        .images-container {
-            gap: 197px !important;
-        }
-
         .image-box {
             height: 300px;
         }
@@ -244,12 +212,11 @@
         }
 
         .images-container {
-            gap: 75px !important;
+            grid-template-columns: repeat(auto-fill,minmax(360px, 1fr));
         }
 
         .image-box {
             height: 500px;
-            max-width: calc(45% - 300px);
         }
 
         .title {
