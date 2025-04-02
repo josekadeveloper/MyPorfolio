@@ -1,10 +1,12 @@
-import LogoTitle from '../../assets/images/logo-letter.png';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { useEffect, useState } from 'react';
-import AnimatedLetters from '../AnimatedLetters';
-import Logo from './Logo';
 import Loader from 'react-loaders';
 import { useTranslation } from "react-i18next";
+
+import LogoTitle from '../../assets/images/logo-letter.png';
+import AnimatedLetters from '../AnimatedLetters';
+import Logo from './Logo';
+
 import './index.scss';
 
 const Home = () => {

@@ -1,12 +1,14 @@
-import { NavLink } from 'react-router-dom';
-import './index.scss';
+import { useState } from 'react';
+import { NavLink } from 'react-router';
+import { useTranslation } from "react-i18next";
+
 import LogoES from '../../assets/images/logoES.png';
 import LogoEN from '../../assets/images/logoEN.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faSuitcase, faUser, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { useTranslation } from "react-i18next";
-import { useState } from 'react';
+
+import './index.scss';
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
