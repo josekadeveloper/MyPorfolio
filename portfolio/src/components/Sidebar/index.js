@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
-    const [i18n] = useTranslation("global");
+    const { i18n } = useTranslation("global");
 
     return (
         <div className="nav-bar">
