@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import AnimatedLetters from '../AnimatedLetters/animated-letters';
+import AnimatedLetters from '../../components/AnimatedLetters/animated-letters';
 
 import "./not-found-page.scss";
 

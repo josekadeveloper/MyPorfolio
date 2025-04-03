@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import Loader from 'react-loaders';
 import { useTranslation } from "react-i18next";
 
-import LogoTitle from '../../assets/images/logo-letter.png';
+import LogoTitle from '../../assets/logos/logo-letter.png';
 import AnimatedLetters from '../../components/AnimatedLetters/animated-letters';
 import Logo from './Logo/logo';
 

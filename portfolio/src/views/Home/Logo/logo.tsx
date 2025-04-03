@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 
 import gsap from 'gsap-trial';
 
-import Avatar from '../../../assets/images/fotoportfolio.jpeg';
+import Avatar from '../../../assets/logos/fotoportfolio.jpeg';
 
 import './logo.scss'
 

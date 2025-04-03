@@ -9,10 +9,9 @@ import Home from './views/Home/home';
 import About from './views/About/about';
 import Contact from './views/Contact/contact';
 import Portfolio from './views/Portfolio/portfolio';
-import Dashboard from './views/Dashboard/dashboard';
+import NotFoundPage from './views/NotFoundPage/not-found-page';
 
 import './app.scss';
-import NotFoundPage from './components/NotFoundPage/not-found-page';
 
 initializeEmailJS();
 
@@ -24,7 +23,6 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="portfolio" element={<Portfolio />} />
-        <Route path="dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
