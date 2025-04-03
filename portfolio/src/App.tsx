@@ -11,7 +11,7 @@ import Contact from './views/Contact/contact';
 import Portfolio from './views/Portfolio/portfolio';
 import NotFoundPage from './views/NotFoundPage/not-found-page';
 
-import './app.scss';
+import './App.scss';
 
 initializeEmailJS();
 
