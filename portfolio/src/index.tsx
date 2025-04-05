@@ -1,35 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router';
-import { I18nextProvider } from "react-i18next";
-import i18next from "i18next";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router'
+import { I18nextProvider } from 'react-i18next'
+import i18next from 'i18next'
 
-import { initializeEmailJS } from "./utils/email-service";
+import { initializeEmailJS } from './utils/email-service'
 
-import global_es from "./locales/es.json";
-import global_en from "./locales/en.json";
+import global_es from './locales/es.json'
+import global_en from './locales/en.json'
 
-import App from './App';
-import ErrorBoundary from './components/ErrorBoundary/error-boundary';
+import App from './App'
+import ErrorBoundary from './components/ErrorBoundary/error-boundary'
 
-import './main.scss';
+import './main.scss'
 
-initializeEmailJS();
+initializeEmailJS()
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "en",
+  lng: 'en',
   resources: {
     es: {
       global: global_es,
     },
     en: {
       global: global_en,
-    }
+    },
   },
 })
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
   <React.StrictMode>
@@ -41,4 +41,4 @@ root.render(
       </I18nextProvider>
     </BrowserRouter>
   </React.StrictMode>
-);
+)
