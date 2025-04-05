@@ -9,7 +9,7 @@ Portfolio, where my professional career will be represented attaching all presen
 ### Built With
 
 [![React](https://img.shields.io/badge/React-22272E?style=for-the-badge&logo=react&logoColor=#7DDFFF)](https://es.react.dev/)
-[![TypeScript](https://img.shields.io/badge/JavaScript-22272E?style=for-the-badge&logo=typescript&logoColor=#024A86)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-22272E?style=for-the-badge&logo=typescript&logoColor=#024A86)](https://www.typescriptlang.org/)
 [![Sass](https://img.shields.io/badge/Sass-22272E?style=for-the-badge&logo=sass&logoColor=#C76395)](https://sass-lang.com/)
 
 Developer: José Carlos De La Rosa Methvin
