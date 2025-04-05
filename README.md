@@ -5,12 +5,12 @@ Portfolio, where my professional career will be represented attaching all presen
 ### Features
 
 ![app](/Api.gif)
+
 ### Built With
-[![React](https://img.shields.io/badge/React-22272E?style=for-the-badge&logo=react&logoColor=#7DDFFF
-)](https://es.react.dev/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-22272E?style=for-the-badge&logo=javascript&logoColor=#EFD81D)](https://lenguajejs.com/javascript/)
-[![Sass](https://img.shields.io/badge/Sass-22272E?style=for-the-badge&logo=sass&logoColor=#C76395
-)](https://sass-lang.com/)
+
+[![React](https://img.shields.io/badge/React-22272E?style=for-the-badge&logo=react&logoColor=#7DDFFF)](https://es.react.dev/)
+[![TypeScript](https://img.shields.io/badge/JavaScript-22272E?style=for-the-badge&logo=typescript&logoColor=#024A86)](https://www.typescriptlang.org/)
+[![Sass](https://img.shields.io/badge/Sass-22272E?style=for-the-badge&logo=sass&logoColor=#C76395)](https://sass-lang.com/)
 
 Developer: José Carlos De La Rosa Methvin
 
@@ -18,4 +18,5 @@ Developer: José Carlos De La Rosa Methvin
 [gmail]: mailto:josekadeveloper@gmail.com?subject=Leyendo%20#Ecofriendly&body=Hi
 
 ## Contact
+
 [![Mail me][gmail_logo]][gmail]
